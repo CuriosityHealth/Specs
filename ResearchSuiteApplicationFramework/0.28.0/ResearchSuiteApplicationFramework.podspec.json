@@ -1,0 +1,116 @@
+{
+  "name": "ResearchSuiteApplicationFramework",
+  "version": "0.28.0",
+  "summary": "The ResearchSuite Application Framework is the easiest way to build mobile health research studies.",
+  "description": "The ResearchSuite Application Framework is the easiest way to build mobile health research studies.\nNOTE: VERY EXPERIMENTAL!!",
+  "homepage": "https://github.com/CuriosityHealth/ResearchSuiteApplicationFramework-iOS",
+  "authors": {
+    "jdkizer9": "jdkizer9@users.noreply.github.com"
+  },
+  "source": {
+    "git": "https://github.com/CuriosityHealth/ResearchSuiteApplicationFramework-iOS.git",
+    "tag": "0.28.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "swift_versions": "5.0",
+  "default_subspecs": "Core",
+  "subspecs": [
+    {
+      "name": "Core",
+      "source_files": "Source/Core/Classes/**/*",
+      "resources": [
+        "Source/Core/Storyboards/**/*",
+        "source/Core/Assets/Media.xcassets"
+      ],
+      "dependencies": {
+        "ResearchKit": [
+          "~> 1.4"
+        ],
+        "ReSwift": [
+          "~> 3.0"
+        ],
+        "ResearchSuiteTaskBuilder": [
+          "~> 0.13"
+        ],
+        "ResearchSuiteResultsProcessor": [
+          "~> 0.9"
+        ],
+        "ResearchSuiteExtensions": [
+          "~> 0.25"
+        ],
+        "Gloss": [
+          "~> 2"
+        ],
+        "SimplePDF": [
+          "~> 3"
+        ],
+        "GRMustache.swift": [
+          "~> 4"
+        ],
+        "FSCalendar": [
+
+        ],
+        "SnapKit": [
+
+        ],
+        "LS2SDK/Common": [
+          "~> 0.11"
+        ]
+      }
+    },
+    {
+      "name": "Development",
+      "source_files": "Source/Development/Classes/**/*",
+      "dependencies": {
+        "ResearchSuiteApplicationFramework/Core": [
+
+        ],
+        "Starscream": [
+          "~> 3.0"
+        ],
+        "ReSwift": [
+          "~> 3.0"
+        ],
+        "Gloss": [
+          "~> 2"
+        ]
+      }
+    },
+    {
+      "name": "Database",
+      "source_files": "Source/Database/**/*",
+      "dependencies": {
+        "ResearchSuiteApplicationFramework/Core": [
+
+        ],
+        "RealmSwift": [
+
+        ],
+        "LS2SDK/Common": [
+          "~> 0.11"
+        ],
+        "LS2SDK/Database": [
+          "~> 0.11"
+        ]
+      }
+    },
+    {
+      "name": "ConfigCaching",
+      "source_files": "Source/ConfigCache/**/*",
+      "dependencies": {
+        "ResearchSuiteApplicationFramework/Core": [
+
+        ],
+        "Zip": [
+          "~> 1.1"
+        ],
+        "Alamofire": [
+          "~> 4"
+        ]
+      }
+    }
+  ],
+  "swift_version": "5.0"
+}
