@@ -1,0 +1,50 @@
+{
+  "name": "SymptomTracking",
+  "version": "0.3.0",
+  "summary": "A short description of SymptomTracking.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/CuriosityHealth/SymptomTracking-iOS",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "jdkizer9": "james@curiosityhealth.com"
+  },
+  "source": {
+    "git": "https://github.com/CuriosityHealth/SymptomTracking-iOS.git",
+    "tag": "0.3.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "swift_versions": "5.0",
+  "source_files": "SymptomTracking/Classes/**/*",
+  "dependencies": {
+    "Gloss": [
+      "~> 2.0"
+    ],
+    "LS2SDK": [
+      "~> 0.10"
+    ],
+    "ResearchKit": [
+      "~> 1.5"
+    ],
+    "ResearchSuiteExtensions": [
+      "~> 0.25"
+    ],
+    "ResearchSuiteTaskBuilder": [
+      "~> 0.13"
+    ],
+    "ResearchSuiteResultsProcessor": [
+      "~> 0.9"
+    ],
+    "ResearchSuiteApplicationFramework": [
+      "~> 0.25"
+    ],
+    "SnapKit": [
+      "~> 4.0"
+    ]
+  },
+  "swift_version": "5.0"
+}
